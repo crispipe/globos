@@ -74,4 +74,7 @@
 .more {
     color: rgb(255, 147, 47);
 }
-
+.intentar{
+    text-align: center;
+    color: red;
+}

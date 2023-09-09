@@ -6,7 +6,7 @@
 <body>
 
 
-    <h1>puntilla</h1>
+    <h1 class="titulo">puntilla</h1>
     <h2>numero de pliegos</h2>
     <style>
         .entrada {
@@ -32,14 +32,19 @@
         .titulo {
             color: orangered;
         }
+        .colors{
+            color: green;
+        }
     </style>
     <button> <a href="../index.html">ir a inicio</a></button>
-    <button> <a href="../ventas.html">ir a ventas</a></button>
+    <button> <a href="../ventas.html">volver a ventas</a></button>
     <table class="salida" width="90%">
+
+        <br><br>
         <tr>
-            <th>numero de pliegos</th>
-            <th>tamaño</th>
-            <th>precio</th>
+            <th class="colors">numero de pliegos</th>
+            <th class="colors">tamaño</th>
+            <th class="colors">precio</th>
         </tr>
         <tr>
             <td>48 </td>
@@ -77,6 +82,7 @@
             <td>500.000 </td>
         </tr>
     </table>
+    
     <h2 class="titulo">mas informacion a este numero</h2>
     <h3>3194404993</h3>
     <h3 class="titulo">instagram como: turma cj</h3>
@@ -100,10 +106,14 @@
         <label for="numero de pliegos">numero de pliegos</label>
         <input class="entrada" name="numero de pliegos" type="text">
         <br><br>
-        <input class="color" type="submit">
 
+
+        <label for="fecha">fecha de entrega</label>
+        <input class="entrada" name="fecha" type="date">
+        <br><br>
+        <input class="color" type="submit">
     </form>
 
-    </body>
+</body>
 
 </html>
