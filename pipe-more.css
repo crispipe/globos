@@ -1,0 +1,77 @@
+.entrada {
+    color: rgb(50, 102, 205);
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.salida {
+    color: rgb(255, 17, 0);
+    border-radius: 10px
+}
+
+.more {
+    border-radius: 20px;
+    border-color: rgb(255, 81, 0);
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgba(0, 229, 255, 0.467);
+}
+
+.pipe {
+    border-radius: 10px;
+    border-color: red;
+
+}
+
+.fondo1 {
+    background-image: url(images/img8.jpg);
+    background-position-x: center;
+    background-color: rgba(0, 0, 0, 0.228);
+    background-blend-mode: color-burn;
+}
+
+.pipe {
+    color: black;
+}
+
+.fondo2 {
+    background-image: url(images/img7.jpg);        
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: color-burn;
+    background-repeat:repeat-x;
+    background-position: center top;
+    background-size: 70%;
+    background-size: cover;
+}
+.fondo3 {
+    background-image: url(images/img8.jpg);        
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: color-burn;
+    background-repeat:repeat-x;
+    background-position: center top;
+    background-size: 70%;
+    background-size: cover;
+}
+
+
+.entrada {
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+
+}
+
+.color {
+    border-radius: 10px;
+    border-color: green
+}
+
+.titulo {
+
+    border-color: blue;
+}
+
+.more {
+    color: rgb(255, 147, 47);
+}
+

@@ -1,0 +1,110 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>do balao</title>
+    <link rel="icon" type="image/x-icon" href="http://127.0.0.1:5500/images.jpeg">
+    <style>
+        .entrada {
+            color: rgb(50, 102, 205);
+            text-align: center;
+            background-color: orange;
+            border-radius: 10px;
+        }
+
+        .salida {
+            color: rgb(255, 17, 0);
+            border-radius: 10px
+        }
+
+        .more {
+            border-radius: 20px;
+            border-color: rgb(255, 81, 0);
+            border-width: 5px;
+            border-style: solid;
+            background-color: rgba(0, 229, 255, 0.467);
+        }
+
+        .pipe {
+            border-radius: 10px;
+            border-color: red;
+
+        }
+        .fondo {
+            background-image: url(images/img1.jpg);
+            background-position-x: center;
+        }
+    </style>
+</head>
+
+<body class="fondo">
+
+    <div class="entrada">
+        <h1>informacion globos</h1>
+    </div>
+    <h2 class="salida">que es un globo</h2>
+    <div class="more">
+        <h3>Es un pequeño globo aerostático hecho generalmente de papel de china con una llama dentro. Es una
+            burbuja de aire
+            caliente atrapada en el papel. Su vuelo se debe a la diferencia de densidades entre el aire en su interior y
+            el
+            exterior</h3>
+    </div>
+    <img src="./do balao_files/images.jpeg" width="250">
+    <br><br>
+
+    <br><br>
+    <button><a href="http://127.0.0.1:5500/ventas.html">ir a ventas de globos </a> </button>
+    <hr>
+    <br><br>
+    <form action="http://127.0.0.1:5500/index.html">
+        <label for="nombre"> nombre</label>
+        <input class="pipe" name="nombre" id="nombre" type="text">
+        <br><br>
+        <label for="apellido">apellido</label>
+        <input class="pipe" name="apellido" type="text">
+        <br><br>
+        <input class="pipe" type="submit">
+
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
