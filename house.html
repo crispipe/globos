@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi casa</title>
+    <style>
+        .wall {
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .door {
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+            padding-top: 110px;
+            padding-bottom: 110px;
+            padding-left: 20px;
+            width: 120px;
+            border: 3px solid rgb(49, 0, 128);
+            background-color: brown;
+            transform-origin:left ;
+            transition: transform 0.45s;
+        }
+
+        .windows {
+            display: grid;
+            grid-template-columns: 62px 62px;
+            position: absolute;
+            height: 120px;
+            top: 200px;
+            right: 60px;
+            width: 120px;
+            border: 2px solid rgb(255, 0, 0);
+
+        }
+        .open{
+            transform: perspective(1200px)rotateY(45deg) ;
+        }
+
+        .shape {
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            background-color: black;
+        }
+
+        .glass {
+            margin: auto;
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: rgb(255, 72, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wall" class="wall">
+        <button onclick="abrir()">abrir</button>
+        <button onclick="cerrar()">cerrar</button>
+        <div class="door">
+            
+            <div class="shape"></div>
+        </div>
+       
+        <div class="windows">
+            <div class="glass"></div>
+            <div class="glass"></div>
+            <div class="glass"></div>
+            <div class="glass"></div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <script>
+      const door=document.getElementById("door")
+      function abrir(){
+        door.classList.add("open")
+      }
+    </script>
+
+</body>
+
+</html>
