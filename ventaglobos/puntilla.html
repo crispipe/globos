@@ -1,13 +1,54 @@
 <html>
 
 <head>
+ <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Espacio opcional para separar la tabla del contenido siguiente */
+        }
 
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+            color: white; /* Color del texto en las celdas de encabezado */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Color de fondo para las filas pares */
+        }
+        .boton {
+            padding: 15px 40px;
+            font-size: 20px;
+            background-color: #34badb;
+            padding: 10px 15px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .boto {
+            padding: 15px 40px;
+            font-size: 20px;
+            background-color:orange;
+            padding: 10px 15px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <h1 class="titulo">puntilla</h1>
+    <h1 class="guela">puntilla</h1>
     <h2>numero de pliegos</h2>
     <style>
         .entrada {
@@ -37,51 +78,61 @@
         .colors {
             color: green;
         }
-    </style>
-    <button> <a href="../inicio.html">ir a inicio</a></button>
-    <button> <a href="../ventas.html">volver a ventas</a></button>
+        .guel{
+
+            color: black;
+                font-size: 33px;
+            }
+            .guela{
+
+color:red;
+    font-size: 55px;
+}
+        </style>
+    <button class="boton"> <a href="../inicio.html">ir a inicio</a></button>
+    <button class="boton"> <a href="../ventas.html">volver a ventas</a></button>
     <table class="salida" width="90%">
 
         <br><br>
         <tr>
-            <th class="colors">numero de pliegos</th>
-            <th class="colors">tamaño</th>
-            <th class="colors">precio</th>
+            <th class="guel">numero de pliegos</th>
+            <th class="guel">tamaño</th>
+            <th class="guel">precio</th>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla48.html">48</a></button></td>
+            <td><button class="boto"><a href="../globotilla.html/tilla48.html">48</a></button></td>
             <td>3.5 metros </td>
             <td>60.000 </td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla72.html">72</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla72.html">72</a></button></td>  
             <td>4 metros </td>
             <td>95.000 </td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla108.html">108</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla108.html">108</a></button></td>  
             <td>5 metros </td>
             <td>130.000 </td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla192.html">192</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla192.html">192</a></button></td>  
             
             <td>7 metros</td>
             <td>150.000</td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla300.html">300</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla300.html">300</a></button></td>  
 
             <td>9 metros </td>
             <td>180.000 </td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla440.html">440</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla440.html">440</a></button></td>  
             <td>10 metros </td>
             <td>300.000 </td>
         </tr>
         <tr>
-            <td><button><a href="../globotilla.html/tilla644.html">644</a></button></td>  
+            <td><button class="boto"><a href="../globotilla.html/tilla644.html">644</a></button></td>  
             
             <td>12 metros </td>
             <td>500.000 </td>
